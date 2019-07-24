@@ -1,8 +1,17 @@
 package com.liu.mall.mall_01.mbg.model;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
+/**
+ *产品分类表
+ * 注解：@ApiModel和ApiModelProperty用于在通过实体类对象接受参数在api文档中显示参数的的说明
+ *数据库对应表：pms_brand
+ * @Author: Xiao Liu
+ *
+ */
+@ApiModel(value = "pmsBrand")
 public class PmsBrand implements Serializable {
     private Long id;
 
